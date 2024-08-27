@@ -6,14 +6,13 @@ import java.util.Scanner;
 public class NewProject {
 
 	public static void main(String[] args) {
-		private static Scanner() {
-			Scanner s = new Scanner(System.in);
-		}
-		System.out.print("Digite o nome e o sexo de cada pessoa separada por uma ',' ");
+		Scanner s = new Scanner(System.in);
+		System.out.print("Digite o nome e sexo de cada pessoa separada por uma virgula: ");
 		
-		String resposta = s.next();
+		String resposta = s.nextLine();
 		String[] vetStr = resposta.split(",");
 		Arrays.sort(vetStr);
 		System.out.print(vetStr);
+		s.close();
 	}
 }
